@@ -785,11 +785,6 @@ body {
 /* .button-modal {
 } */
 
-/* .close-btn:focus,
-.close-btn:hover {
-  stroke: red;
-} */
-
 .modal-text {
   width: 360px;
   height: 24px;
@@ -862,7 +857,8 @@ body {
 
 .checkbox:checked + .label-checkbox .custom-checkbox {
   background-color: #404bbf;
-  border: transparent;
+  /* border: transparent; */
+  border: none;
   fill: #f4f4fd;
 }
 .label-checkbox {
@@ -876,6 +872,10 @@ body {
   fill: transparent;
 }
 
+.label-checkbox-line {
+  color: #4d5ae5;
+}
+
 .custom-checkbox {
   width: 16px;
   height: 16px;
@@ -886,6 +886,10 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 
 .label-checkbox a {
@@ -906,21 +910,31 @@ body {
 }
 
 .button-modal-submit {
-  margin: auto 0;
-  font-weight: 500;
+  display: block;
+  margin: auto;
+
+  min-width: 169px;
+  height: 56px;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
   color: #fff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /*   
+  text-align: center;
+  
 
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
-  height: 56px;
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
+   */
 }
 
 /* #region  COMMIT */
